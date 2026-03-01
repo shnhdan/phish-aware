@@ -1,0 +1,50 @@
+# ════════════════════════════════════════════════
+#   PhishAware — Environment Variables
+#   Fill in every value before running the app
+# ════════════════════════════════════════════════
+
+
+# ── SUPABASE ─────────────────────────────────────
+# From: supabase.com → Project Settings → API
+
+SUPABASE_URL=https://xrkuhuhgoshdxedluyos.supabase.co
+SUPABASE_ANON_KEY=paste-your-anon-public-key-here
+SUPABASE_SERVICE_KEY=paste-your-service-role-key-here
+
+# For Next.js frontend (must start with NEXT_PUBLIC_)
+NEXT_PUBLIC_SUPABASE_URL=https://xrkuhuhgoshdxedluyos.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=paste-your-anon-public-key-here
+
+
+# ── VIRUSTOTAL ───────────────────────────────────
+# From: virustotal.com → Profile Icon → API Key
+
+VIRUSTOTAL_API_KEY=paste-your-virustotal-api-key-here
+
+
+# ── UPSTASH REDIS ────────────────────────────────
+# From: upstash.com → your database → Connect tab
+
+REDIS_URL=rediss://paste-your-upstash-redis-url-here:6379
+REDIS_PASSWORD=paste-your-upstash-redis-password-here
+
+
+# ── RAILWAY (Backend URL) ────────────────────────
+# From: railway.app → your project → copy the public domain
+# Fill this in AFTER you deploy the backend to Railway
+
+NEXT_PUBLIC_API_URL=https://paste-your-railway-url.up.railway.app
+
+
+# ── AIRFLOW ──────────────────────────────────────
+# Leave these as-is for local development
+
+AIRFLOW__CORE__EXECUTOR=LocalExecutor
+AIRFLOW__DATABASE__SQL_ALCHEMY_CONN=sqlite:////home/airflow/airflow.db
+AIRFLOW_BASE_URL=http://localhost:8080
+
+
+# ── LOCAL DEV OVERRIDES ──────────────────────────
+# Uncomment these when running locally
+
+# NEXT_PUBLIC_API_URL=http://localhost:8000
