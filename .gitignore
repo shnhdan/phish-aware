@@ -1,2 +1,6 @@
 .env
 frontend/.env.local
+.env
+.env.local
+**/.env
+**/.env.local
